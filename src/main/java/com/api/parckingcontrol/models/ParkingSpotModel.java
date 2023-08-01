@@ -38,6 +38,8 @@ public class ParkingSpotModel implements Serializable {
     private String apartment;
     @Column(nullable = false, length = 30)
     private String block;
+    
+    
 	public UUID getId() {
 		return id;
 	}
@@ -98,10 +100,6 @@ public class ParkingSpotModel implements Serializable {
 	public void setBlock(String block) {
 		this.block = block;
 	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	} 
-    
     
     
 

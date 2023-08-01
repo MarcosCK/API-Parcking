@@ -1,7 +1,5 @@
 package com.api.parckingcontrol.dtos;
 
-import java.time.LocalDateTime;
-
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
@@ -19,15 +17,21 @@ public class ParkingSpotDtos {
 	@NotBlank
 	private String colorCar;
 	@NotBlank
-	private LocalDateTime registrationDate;
-	@NotBlank
 	private String responsibleName;
 	@NotBlank
 	private String apartment;
+	@NotBlank
+	private String block;
 	
 	
 	public String getParkingSpotNumber() {
 		return parkingSpotNumber;
+	}
+	public String getBlock() {
+		return block;
+	}
+	public void setBlock(String block) {
+		this.block = block;
 	}
 	public void setParkingSpotNumber(String parkingSpotNumber) {
 		this.parkingSpotNumber = parkingSpotNumber;
@@ -55,12 +59,6 @@ public class ParkingSpotDtos {
 	}
 	public void setColorCar(String colorCar) {
 		this.colorCar = colorCar;
-	}
-	public LocalDateTime getRegistrationDate() {
-		return registrationDate;
-	}
-	public void setRegistrationDate(LocalDateTime registrationDate) {
-		this.registrationDate = registrationDate;
 	}
 	public String getResponsibleName() {
 		return responsibleName;

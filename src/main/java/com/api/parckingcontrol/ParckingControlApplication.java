@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ParckingControlApplication {
 
 	public static void main(String[] args) {
-		
-		SpringApplication.run(ParckingControlApplication.class, args);}
+			SpringApplication.run(ParckingControlApplication.class, args);
+		}
 	
 	@GetMapping("/")
 	public String index(){
